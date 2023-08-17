@@ -15,7 +15,7 @@ int main(){
     scanf("%d", &num1);
 
     printf("insira um numero: ");
-    scanf("%d", &num2); //%d ele prepara o código para esperar a leitura de uma variavel
+    scanf("%d", &num2); //%d ele prepara o cÃ³digo para esperar a leitura de uma variavel
 
     soma = num1 + num2;
     sub = num1 - num2;
@@ -45,6 +45,8 @@ int main(){
     printf("\nOs valores sao: primeiro: %d e o segundo: %d", num1, num2 );
     */
 
+     //ATV-03
+    /*
      int  num, num1, num2, num3;
 
      printf("Informe um numero:");
@@ -55,5 +57,24 @@ int main(){
     num3 = (num % 100) % 10;
 
     printf("\n numero invertido: %d%d%d", num3, num2, num1);
+    */
+
+    //ATV-05
+    float  num1, num2;
+
+    printf("insira um numero: ");
+    scanf("%f", &num1);
+
+    printf("insira um numero: ");
+    scanf("%f", &num2);
+
+   if (num1>num2){
+        float maior = num1 - num2;
+        printf("A diferenca e: %f", maior);
+    }
+    else {
+        printf("O seguundo numero e maior,%f", num2);
+    }
+
     return 0;
 }
