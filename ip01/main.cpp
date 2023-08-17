@@ -76,5 +76,26 @@ int main(){
         printf("O seguundo numero e maior,%f", num2);
     }
 
+    
+    int  num1, num2, num3;
+
+    printf("insira um numero: ");
+    scanf("%d", &num1);
+
+    printf("insira um numero: ");
+    scanf("%d", &num2);
+
+    printf("insira um numero: ");
+    scanf("%d", &num3);
+
+    if (num1 > num2 && num1 > num3) {
+            printf("maior1");
+    }else if (num2 > num3 && num2 > num1) {
+        printf("maior2");
+    }else if (num3 > num1 && num3 > num2) {
+        printf("maior2")
+        } else {
+        printf("Nenhuma das alternativas a seguir foi validada");
+}
     return 0;
 }
