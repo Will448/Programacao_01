@@ -52,11 +52,11 @@ int main(){
      printf("Informe um numero:");
      scanf("%d", &num); // o & serve para demonstrar o lugar que a varivel vai ser guardada na memoria
 
-    num1 = (num / 100);
-    num2 = (num % 100) / 10;
-    num3 = (num % 100) % 10;
+    num1 = (num / 100); //centena
+    num2 = (num % 100) / 10; //dezena
+    num3 = (num % 100) % 10; // unidade
 
-    printf("\n numero invertido: %d%d%d", num3, num2, num1);
+    printf("\n numero invertido: %d %d %d", num3, num2, num1);
     */
 
     //ATV-05
@@ -76,28 +76,6 @@ int main(){
     else {
         printf("O seguundo numero e maior,%f", num2);
     }
-
-    //ATV-9
-    int  num1, num2, num3;
-
-    printf("insira um numero: ");
-    scanf("%d", &num1);
-
-    printf("insira um numero: ");
-    scanf("%d", &num2);
-
-    printf("insira um numero: ");
-    scanf("%d", &num3);
-
-    if (num1 > num2 && num1 > num3) {
-            printf("maior1");
-    }else if (num2 > num3 && num2 > num1) {
-        printf("maior2");
-    }else if (num3 > num1 && num3 > num2) {
-        printf("maior2")
-        } else {
-        printf("Nenhuma das alternativas a seguir foi validada");
-}
     */
     
 //ATV-06
@@ -119,7 +97,7 @@ if (a > b) {
     printf("Multiplicacao: %d", a * b); //nesta linha nós estamos realizando o camando que prepara o código para ler dois itens após a virgula, ou seja as variaveis ou antes da virgula
 }
 */
-    /* ATV-07 Ler um valor inteiro que representa o mês de uma data e apresentar o trimestre correspondente. 
+/* ATV-07 Ler um valor inteiro que representa o mês de uma data e apresentar o trimestre correspondente. 
 
 
 int mes;
@@ -139,6 +117,36 @@ if(mes <= 3){
     printf("Opcao invalida");
 }
     */
-    
+
+
+
+
+
+
+
+
+//ATV-9
+/*    
+ int  num1, num2, num3;
+
+printf("insira um numero: ");
+scanf("%d", &num1);
+
+printf("insira um numero: ");
+scanf("%d", &num2);
+
+printf("insira um numero: ");
+scanf("%d", &num3);
+
+if (num1 > num2 && num1 > num3) {
+    printf("maior1");
+}else if (num2 > num3 && num2 > num1) {
+    printf("maior2");
+}else if (num3 > num1 && num3 > num2) {
+    printf("maior2")
+    } else {
+    printf("Nenhuma das alternativas a seguir foi validada");
+}
+    */
     return 0;
 }
