@@ -119,6 +119,26 @@ if (a > b) {
     printf("Multiplicacao: %d", a * b); //nesta linha nós estamos realizando o camando que prepara o código para ler dois itens após a virgula, ou seja as variaveis ou antes da virgula
 }
 */
+    /* ATV-07 Ler um valor inteiro que representa o mês de uma data e apresentar o trimestre correspondente. 
+
+
+int mes;
+
+printf("digite o trimestre: ");
+scanf("%d", &mes);
+
+if(mes <= 3){
+    printf("esta no primeiro trimestre.");
+} else if(mes >= 4 && mes <= 6){
+    printf("esta no segundo trimestre.");
+} else if (mes >= 7 && mes <= 10){
+    printf("esta no terceiro trimestre.");
+}else if (mes >= 10 && mes <= 12){
+    printf("esta no quarto trimestre.");
+}else{
+    printf("Opcao invalida");
+}
+    */
     
     return 0;
 }
