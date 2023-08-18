@@ -8,23 +8,23 @@ int main(){
     // IP01 - Willian
     // ATV-01-
 /*
-    int  num1, num2, soma, sub, mult;
+    float  num1, num2, soma, sub, mult;
     float div;
 
     printf("insira um numero: ");
-    scanf("%d", &num1);
+    scanf("%f", &num1);
 
     printf("insira um numero: ");
-    scanf("%d", &num2); //%d ele prepara o código para esperar a leitura de uma variavel
+    scanf("%f", &num2); //%d ele prepara o código para esperar a leitura de uma variavel tipo inteira e %f para float
 
     soma = num1 + num2;
     sub = num1 - num2;
     div = (float)num1 / (float) num2; //estamos convertendo as variaveis de int para float
     mult = num1 * num2;
 
-    printf("A soma e: %d", soma);
-    printf("\n A sub e: %d", sub);
-    printf("\n A mult e: %d", mult);
+    printf("A soma e: %f", soma);
+    printf("\n A sub e: %f", sub);
+    printf("\n A mult e: %f", mult);
     printf("\n A div e: %f", div);
 */
     //ATV-02
@@ -60,6 +60,7 @@ int main(){
     */
 
     //ATV-05
+    /*
     float  num1, num2;
 
     printf("insira um numero: ");
@@ -97,5 +98,27 @@ int main(){
         } else {
         printf("Nenhuma das alternativas a seguir foi validada");
 }
+    */
+    
+//ATV-06
+/*Ler dois valores inteiros (variáveis A e B) e apresentar a adição destes valores, quando a variável
+A for maior que B, caso contrário, efetuar a multiplicação das variáveis.
+
+int a, b;
+
+printf("digite um valor inteiro: ");
+scanf("%d", &a);
+
+printf("digite um valor inteiro: ");
+scanf("%d", &b);
+
+if (a > b) {
+
+    printf("Soma: %d", (a + b) );
+}else{
+    printf("Multiplicacao: %d", a * b); //nesta linha nós estamos realizando o camando que prepara o código para ler dois itens após a virgula, ou seja as variaveis ou antes da virgula
+}
+*/
+    
     return 0;
 }
