@@ -206,7 +206,7 @@ if(num1 > num2 && num2 > num3 ){
 seu peso ideal, utilizando as seguintes fórmulas:
 para homens: (72.7 * h) - 58;
 para mulheres: (62.1 * h) - 44.7.
-*/
+
 
 float  altura_h, altura_m, peso_h, ideal_h, peso_m, ideal_m;
 int val;
@@ -244,6 +244,34 @@ break;
 default :
 printf("Você escolheu uma opção inválida!\n");
 }
+*/
+// ATV- 12
+/*
+   cout<<"Hello World\n";
+    
+int idade;
 
-    return 0;
+printf("Digite a sua idade: ");
+scanf("%d", &idade);
+
+if(idade <= 0){
+    printf("idade invalida");
+} else{
+if (idade >= 5 && idade <=7) {
+    printf("Categoria A - Infantil\n");
+} else if (idade >= 8 && idade <=10) {
+    printf("Categoria B - Infantil\n");
+} else if (idade >= 11 && idade <=13) {
+    printf("Categoria A - Juvenil\n");
+} else if (idade >= 14 && idade <=17) {
+    printf("Categoria B - Juvenil\n");
+} else if (idade >= 18) {
+    printf("Categoria Senior\n");
+} else {
+    printf("A idade digitada nao corresponde a nenhuma categoria\n");
+}
+
+}  
+*/    
+return 0;
 }
