@@ -77,7 +77,21 @@ int main(){
         printf("O seguundo numero e maior,%f", num2);
     }
     */
-    
+//ATV-05
+    /*
+    float valor, aux;
+int num = -1;
+
+printf("Digite um valor: ");
+scanf("%f", &valor);
+
+if(valor < 0){
+    aux = valor * num;
+    printf("O modulo e: %.1f", aux);
+} else{
+    printf("O modulo e: %.1f", valor);
+}
+*/
 //ATV-06
 /*Ler dois valores inteiros (variáveis A e B) e apresentar a adição destes valores, quando a variável
 A for maior que B, caso contrário, efetuar a multiplicação das variáveis.
