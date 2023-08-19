@@ -171,5 +171,79 @@ if (num1 > num2 && num1 > num3) {
     printf("Nenhuma das alternativas a seguir foi validada");
 }
     */
+//ATV-10
+    /*
+    int  num1, num2, num3; //usa-se %s para ler texto
+
+    printf("insira um numero: ");
+    scanf("%d", &num1);
+
+    printf("insira um numero: ");
+    scanf("%d", &num2);
+
+    printf("insira um numero: ");
+    scanf("%d", &num3);
+
+if(num1 > num2 && num2 > num3 ){
+    printf("o maior: %d o menor: %d", num1, num3);
+} else if(num1 > num3 && num3 > num2 ){
+    printf("o maior: %d o menor: %d", num1,num2);
+}else if(num2 > num3 && num3 > num1){
+    printf("o maior: %d o menor: %d", num2,num1);
+}else if(num3 > num2 && num2 > num1){
+    printf("o maior: %d o menor: %d", num3,num1);
+}else if(num3 > num1 && num1 > num2){
+    printf("o maior: %d o menor: %d", num3,num2);
+}   else if(num2 > num1 && num1 > num3){
+    printf("o maior: %d o menor: %d", num2,num3);
+}else{
+    printf("Opcao invalida");
+}
+    */
+
+    //ATV-11
+/*Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule
+seu peso ideal, utilizando as seguintes fórmulas:
+para homens: (72.7 * h) - 58;
+para mulheres: (62.1 * h) - 44.7.
+*/
+
+float  altura_h, altura_m, peso_h, ideal_h, peso_m, ideal_m;
+int val;
+    printf("Para homem digite 1:\nPara mulher digite 2: ");
+    scanf("%d", &val);
+
+switch (val) {
+case 1:
+
+printf("Opcao escolhida: %d-Homem ", val);
+
+printf("\nDigite sua altura: ");
+    scanf("%f", &altura_h);
+
+    peso_h = 72.7 * altura_h;
+    ideal_h = peso_h - 58;
+
+printf("\nPeso ideal: %.2f", ideal_h);
+
+break;
+
+case 2:
+
+printf("Opcao escolhida: %d-Mulher ", val);
+
+printf("\nDigite sua altura: ");
+    scanf("%f", &altura_m);
+
+    peso_m = 62.1 * altura_m;
+    ideal_m = peso_m - 44.7;
+
+printf("Peso ideal: %.2f ", ideal_m);
+break;
+
+default :
+printf("Você escolheu uma opção inválida!\n");
+}
+
     return 0;
 }
