@@ -118,13 +118,36 @@ if(mes <= 3){
 }
     */
 
+/* ATV-08 Construa um algoritmo que leia três valores inteiros e os coloque em ordem crescente. */
+/*
 
+ int  num1, num2, num3; //usa-se %s para ler texto
 
+    printf("insira um numero: ");
+    scanf("%d", &num1);
 
+    printf("insira um numero: ");
+    scanf("%d", &num2);
 
+    printf("insira um numero: ");
+    scanf("%d", &num3);
 
-
-
+if(num1 > num2 && num2 > num3 ){
+    printf("a sequencia: %d %d %d", num3, num2, num1);
+} else if(num1 > num3 && num3 > num2 ){
+    printf("A ordem crescente e: %d %d %d\n",num2,num3,num1);
+}else if(num2 > num3 && num3 > num1){
+    printf("A ordem crescente e: %d %d %d\n",num1,num3,num2);
+}else if(num3 > num2 && num2 > num1){
+    printf("A ordem crescente e: %d %d %d\n",num1,num2,num3);
+}else if(num3 > num1 && num1 > num2){
+    printf("A ordem crescente e: %d %d %d\n",num2,num1,num3);
+}   else if(num2 > num1 && num1 > num3){
+    printf("A ordem crescente e: %d %d %d\n",num3,num1,num2);
+}else{
+    printf("Aqui");
+}
+*/
 //ATV-9
 /*    
  int  num1, num2, num3;
