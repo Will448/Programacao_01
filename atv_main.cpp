@@ -5,8 +5,10 @@ using namespace std;
 int main(){
     printf("hello world \n");
 
-    // IP01 - Willian
-    // ATV-01-
+    // IP_01 - Willian Bongiovanni -- Sistemas de informação-2°períodp
+
+// ATV-01- Ler dois valores inteiros (variáveis A e B) e efetuar as operações de adição, subtração,
+//multiplicação e divisão de A por B, apresentando ao final os quatro resultados obtidos.
 /*
     float  num1, num2, soma, sub, mult;
     float div;
@@ -27,7 +29,9 @@ int main(){
     printf("\n A mult e: %f", mult);
     printf("\n A div e: %f", div);
 */
-    //ATV-02
+//ATV-02-Ler dois valores para as variáveis A e B, efetuar a troca dos valores de forma que a variável A
+//passe a possuir o valor da variável B e que a variável B passe a possuir o valor da variável A. Apresentar os valores trocados. 
+
 /*
     int  num1, num2, aux;
 
@@ -45,7 +49,8 @@ int main(){
     printf("\nOs valores sao: primeiro: %d e o segundo: %d", num1, num2 );
     */
 
-     //ATV-03
+//ATV-03-Dado um número inteiro de 3 algarismos, inverter a ordem de seus algarismos. Os três algarismos
+//do número dado são diferentes de zero. Utilize os operadores / e %.
     /*
      int  num, num1, num2, num3;
 
@@ -59,7 +64,24 @@ int main(){
     printf("\n numero invertido: %d %d %d", num3, num2, num1);
     */
 
-    //ATV-05
+//ATV-04-Efetuar a leitura de um valor inteiro positivo ou negativo e apresentar o número lido como sendo
+//um valor positivo, ou seja, o programa deverá apresentar o módulo de um número fornecido.
+//Lembre-se de verificar se o número fornecido é menor que zero, sendo multiplique-o por –1.
+    /*
+    float valor, aux;
+    int num = -1;
+
+    printf("Digite um valor: ");
+    scanf("%f", &valor);
+
+    if(valor < 0){
+        aux = valor * num;
+        printf("O modulo e: %.1f", aux);
+    } else{
+        printf("O modulo e: %.1f", valor);
+    }
+
+//ATV-05- Ler dois valores numéricos e apresentar a diferença do maior pelo menor. 
     /*
     float  num1, num2;
 
@@ -72,30 +94,15 @@ int main(){
    if (num1>num2){
         float maior = num1 - num2;
         printf("A diferenca e: %f", maior);
-    }
-    else {
+    }else {
         printf("O seguundo numero e maior,%f", num2);
     }
     */
-//ATV-05
-    /*
-    float valor, aux;
-int num = -1;
-
-printf("Digite um valor: ");
-scanf("%f", &valor);
-
-if(valor < 0){
-    aux = valor * num;
-    printf("O modulo e: %.1f", aux);
-} else{
-    printf("O modulo e: %.1f", valor);
-}
 */
 //ATV-06
-/*Ler dois valores inteiros (variáveis A e B) e apresentar a adição destes valores, quando a variável
-A for maior que B, caso contrário, efetuar a multiplicação das variáveis.
-
+//Ler dois valores inteiros (variáveis A e B) e apresentar a adição destes valores, quando a variável
+//A for maior que B, caso contrário, efetuar a multiplicação das variáveis.
+/*
 int a, b;
 
 printf("digite um valor inteiro: ");
@@ -111,9 +118,8 @@ if (a > b) {
     printf("Multiplicacao: %d", a * b); //nesta linha nós estamos realizando o camando que prepara o código para ler dois itens após a virgula, ou seja as variaveis ou antes da virgula
 }
 */
-/* ATV-07 Ler um valor inteiro que representa o mês de uma data e apresentar o trimestre correspondente. 
-
-
+//ATV-07 Ler um valor inteiro que representa o mês de uma data e apresentar o trimestre correspondente. 
+/*
 int mes;
 
 printf("digite o trimestre: ");
@@ -132,7 +138,7 @@ if(mes <= 3){
 }
     */
 
-/* ATV-08 Construa um algoritmo que leia três valores inteiros e os coloque em ordem crescente. */
+// ATV-08 Construa um algoritmo que leia três valores inteiros e os coloque em ordem crescente. 
 /*
 
  int  num1, num2, num3; //usa-se %s para ler texto
@@ -162,7 +168,7 @@ if(num1 > num2 && num2 > num3 ){
     printf("Aqui");
 }
 */
-//ATV-9
+//ATV-9-Efetuar a leitura de três números inteiros e apresentar o maior valor. 
 /*    
  int  num1, num2, num3;
 
@@ -185,7 +191,7 @@ if (num1 > num2 && num1 > num3) {
     printf("Nenhuma das alternativas a seguir foi validada");
 }
     */
-//ATV-10
+//ATV-10-Efetuar a leitura de três números inteiros e apresentar o maior e o menor valor. 
     /*
     int  num1, num2, num3; //usa-se %s para ler texto
 
@@ -215,13 +221,11 @@ if(num1 > num2 && num2 > num3 ){
 }
     */
 
-    //ATV-11
-/*Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule
-seu peso ideal, utilizando as seguintes fórmulas:
-para homens: (72.7 * h) - 58;
-para mulheres: (62.1 * h) - 44.7.
+//ATV-11
+//Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+//para homens: (72.7 * h) - 58; para mulheres: (62.1 * h) - 44.7.
 
-
+/*
 float  altura_h, altura_m, peso_h, ideal_h, peso_m, ideal_m;
 int val;
     printf("Para homem digite 1:\nPara mulher digite 2: ");
@@ -259,9 +263,13 @@ default :
 printf("Você escolheu uma opção inválida!\n");
 }
 */
-// ATV- 12
+// ATV- 12- Elabore um programa que, dada a idade de um nadador, classifique-o em uma das seguintes categorias:
+//infantil A = 5 - 7 anos
+//infantil B = 8 - 10 anos
+//juvenil A = 11 - 13 anos
+//juvenil B = 14 - 17 anos 
+//sênior = maiores de 17 anos
 /*
-   cout<<"Hello World\n";
     
 int idade;
 
@@ -294,7 +302,7 @@ using namespace std;
 int main() {
     cout<<"Hello World\n";
 
-//ATV-13
+//ATV-13- Apresentar os resultados da tabuada de um número qualquer. 
 /*
 int valor, aux;
 int contador = 1; 
@@ -308,6 +316,17 @@ for ( contador = 1; contador <= 10; contador++){
 printf(" A tabuada do valor: %d * %d = %d\n", valor, contador, aux);
 }
 */
+//ATV-14- Apresentar os quadrados dos números inteiros de 15 a 35.
+/*
+int i, quadrado;
+
+printf("Quadrado dos números de 15 a 35\n");
+printf("\n");
+for (i=15; i<=35; i++) {  
+    quadrado = i*i;
+    printf("O quadrado de %d eh igual a %4d\n", i, quadrado);
+  }
+ */   
 //ATV-15
 /*
 int valor; 
@@ -325,8 +344,50 @@ while ( contador <= valor ) {
 printf("O fatorial do valor e: %d\n", fat);
 */
 
-    return 0;
+//ATV-16-Apresentar a soma de todos os números divisíveis por 4 entre 40 e 200.
+    /*
+int i = 40; // variavel de controle
+int soma = 0; // somatorio, e recomendado iniciar com 0 as variaveis
+
+ while (i <= 200) {
+   soma = soma + i;
+   i = i + 4; // contador dos numeros inteiros "i" 
+ }
+
+ printf("A soma dos números divisíveis por 4 entre 40 e 200\n");
+
+ printf("Soma = %d", soma);
+ */
+//ATV-17
+//A conversão de graus Fahrenheit para centígrados é obtida pela fórmula C=5/9(F-32). Escreva um
+//algoritmo que calcule e escreva uma tabela de graus centígrados em função de graus Fahrenheit que variem de 50 a 150 de 1 em 1. 
+/*
+float temp_final;
+int temp_far;
+
+for (temp_far = 50; temp_far <= 150; temp_far++) {
+    float val_div = float(5)/9; // float(5) determina que a divisão dos inteiros 5 e 9 seja "exata"
+    temp_final = val_div * (temp_far - 32); 
+
+    printf("%3d graus Fahrenheit = %5.2f centígrados.\n", temp_far, temp_final);
 }
-*/    
+ */
+//ATV-18-Fulano tem 1,50 metro e cresce 2 centímetros por ano, enquanto Ciclano tem 1,10 metro e cresce 3
+//centímetros por ano. Construa um algoritmo que calcule e imprima quantos anos serão necessário para que Ciclano seja maior que Fulano
+/*
+float alt_fulano = 1.50, alt_ciclano = 1.10;
+int qtd_anos = 0;
+
+while (alt_fulano >= alt_ciclano) {
+    alt_fulano = alt_fulano + 0.02;
+    alt_ciclano = alt_ciclano + 0.03;
+    qtd_anos = qtd_anos + 1;
+}
+
+printf("Altura de Fulano  = %.2f\n", alt_fulano);
+printf("Altura de Ciclano = %.2f\n", alt_ciclano);
+
+printf("\nSerão necessários %d anos para que Fulano seja maior que Ciclano.", qtd_anos);
+*/
 return 0;
 }
