@@ -5,7 +5,7 @@ using namespace std;
 int main(){
     printf("hello world \n");
 
-    // IP_01 - Willian Bongiovanni -- Sistemas de informação-2°períodp
+    // IP_01 - Willian Bongiovanni -- Sistemas de informação-2°período
 
 // ATV-01- Ler dois valores inteiros (variáveis A e B) e efetuar as operações de adição, subtração,
 //multiplicação e divisão de A por B, apresentando ao final os quatro resultados obtidos.
