@@ -389,5 +389,84 @@ printf("Altura de Ciclano = %.2f\n", alt_ciclano);
 
 printf("\nSerão necessários %d anos para que Fulano seja maior que Ciclano.", qtd_anos);
 */
+
+//ATV-19-Fulano aplicou R$ 100,00 com rendimento de 5% ao mês. Quantos meses serão necessários para o capital investido ultrapasse a R$ 200,00. 
+/*
+float juro, capital = 100;
+int mes = 0;
+
+  while (capital <= 200.00) {
+    juro = capital * (5 / 100.00);
+    capital = capital + juro;
+    mes = mes + 1;
+  }
+
+  printf("Em %d meses o capital investido será de R$ %.2f", mes, capital);
+*/
+//ATV-20-Fulano realizou um empréstimo bancário de R$ 10.000,00 que deverão ser pagos em 24 mesescom juros de 2% ao mês,
+//incluídos já na primeira parcela. Determine e apresente o valor da última parcela e o montante pago ao final do empréstimo. 
+/*
+  float parcela,juro, total_emp = 0;
+    int i;
+  parcela = 10000.00 / 24; // parcela inicial
+
+  for (i=1; i<=24; i++) {
+    juro = parcela * (2 / 100);
+    parcela = parcela + juro;
+    total_emp = total_emp + parcela;
+    printf("%2d° parcela, R$ %7.2f\n", i, parcela);
+  }
+
+  printf("\n\nValor da última parcela R$ %.2f", parcela);
+  printf("\n\nTotal Pago R$ %.2f", total_emp);
+*/
+
+//ATV-21-A série de Fibonacci é formada pela seqüência: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ..., etc. Escreva um
+//algoritmo que gere a série de Fibonacci até o vigésimo termo. 
+/*
+int termo1 = 1, termo2 = 1, novoTermo;
+
+  for (int i=3; i<=20; i++) {
+    novoTermo = termo1 + termo2; 
+    printf("%2do. termo = %d\n", i, novoTermo);
+
+    termo1 = termo2;	// o segundo termo é o primeiro termo no próximo passo
+    termo2 = novoTermo; // o novo termo é o segundo termo no próximo passo
+  }
+*/
+//ATV-22- Ler um número inteiro e determinar se ele é primo. Obs. um número é primo quando for divisível somente por 1 e por ele mesmo. 
+/*
+int num, i;
+int resultado = 0;
+ 
+ printf("Digite um número: ");
+ scanf("%d", &num);
+ 
+ for (i = 2; i <= num / 2; i++) {
+    if (num % i == 0) {
+       resultado++;
+       printf("%d é um número primo\n", num);
+       break;
+    }else
+    printf("%d não é um número primo\n", num);
+    break;
+ }
+*/
+//ATV23-Apresentar todos os números primos entre 5 e 1700. 
+    /*
+int i;
+int resultado = 0;
+int val = 5;
+while(val < 1700){
+    val ++;
+    for (i = 2; i <= val / 2; i++) {
+        if (val % i == 0) {
+           resultado++;
+           printf("%d é um número primo\n", val);
+           break;
+        }   
+    }
+}
+    */
 return 0;
 }
