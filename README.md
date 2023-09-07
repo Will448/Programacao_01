@@ -1,2 +1,5 @@
 # programacao_01
-códigos desenvolvidos em c++
+Professor: Tarlis Portela;
+Aluno: Wililan Bongiovanni;
+Atividades referentes a IP_01;
+Códigos desenvolvidos em c++;
