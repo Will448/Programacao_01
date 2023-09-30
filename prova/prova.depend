@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1696029485 source:c:\users\aluno\downloads\prova\main.cpp
+	<iostream>
+	<string>
+	<stdio.h>
+
